@@ -20,6 +20,7 @@ public class ProductController {
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     public Product addProduct(@RequestBody Product product){
+
         LOG.info("创建产品，参数：{}", product);
         Product result = productService.addProduct(product);
         LOG.info("创建产品，结果：{}", result);
