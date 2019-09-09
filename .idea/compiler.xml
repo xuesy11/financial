@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.bwie.financial.main" target="1.8" />
+      <module name="com.bwie.financial.test" target="1.8" />
+      <module name="financial.api.main" target="1.8" />
+      <module name="financial.api.test" target="1.8" />
+      <module name="financial.entity.main" target="1.8" />
+      <module name="financial.entity.test" target="1.8" />
+      <module name="financial.quartz.main" target="1.8" />
+      <module name="financial.quartz.test" target="1.8" />
+      <module name="financial.swagger.main" target="1.8" />
+      <module name="financial.swagger.test" target="1.8" />
+      <module name="financial.util.main" target="1.8" />
+      <module name="financial.util.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
