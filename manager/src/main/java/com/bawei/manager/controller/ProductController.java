@@ -19,11 +19,21 @@ public class ProductController {
 
 
     @RequestMapping(value = "", method = RequestMethod.POST)
-    public Product addProduct(@RequestBody Product product){
+    public Product addProduct(@RequestBody Product product) {
 
         LOG.info("创建产品，参数：{}", product);
         Product result = productService.addProduct(product);
         LOG.info("创建产品，结果：{}", result);
         return result;
     }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public Product findOne(@PathVariable String id) {
+        LOG.info("查询单个产品，id={}", id);
+        Product result = productService.findOne(id);
+        LOG.info("查询单个产品，结果：{}", result);
+        return result;
+    }
+
+
 }
